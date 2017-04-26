@@ -115,3 +115,12 @@ hr {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+.profile-pic {
+  display: inline-block;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-left: -115px;
+  border: solid 2px #446;
+}
