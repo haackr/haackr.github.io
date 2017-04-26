@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EEEEF3;
+}
+
+p {
+  color: #666;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  background: url("../luca-bravo-198061.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: 0% 20%;
+  height: 100vh;
+  text-align: left;
+  color: #88A;
+  font-weight: 300;
+}
+.header h1 {
+  margin: 0px;
+  font-weight: 300;
+}
+.header p {
+  margin: 0px;
+  color: #88A;
+}
+
+.header-content {
+  position: absolute;
+  left: 10em;
+  top: 8em;
+}
+.header-content p {
+  position: relative;
+  left: 2em;
+  top: -.5em;
+  display: inline;
+}
+
+/* Center heading for smaller screens */
+@media (max-width: 500px) {
+  .header-content {
+    position: relative;
+    text-align: center;
+    left: 0em;
+  }
+}
+/* move subheading down when it will overflow */
+@media (max-width: 254px) {
+  .header-content p {
+    left: 0;
+    top: 0;
+  }
+}
+.content {
+  margin: 0 20% 0 20%;
+}
+
+.social-media {
+  font-size: 2em;
+}
+.social-media a {
+  color: #446;
+}
+.social-media a :hover {
+  color: #002;
+}
+.social-media a :visited {
+  text-deocration: none;
+}
