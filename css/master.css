@@ -63,6 +63,10 @@ h2 {
   margin: 0 20% 0 20%;
 }
 
+.content p {
+  width: 400px;
+}
+
 .social-media {
   font-size: 2em;
 }
@@ -74,4 +78,17 @@ h2 {
 }
 .social-media a :visited {
   text-deocration: none;
+}
+
+a {
+  color: #446;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #002;
+}
+
+a:visted {
+  text-decoration: none;
 }
