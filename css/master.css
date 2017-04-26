@@ -94,14 +94,24 @@ a:visted {
 }
 
 .contact-info {
+  display: inline-block;
   float: right;
-  text-align: right;
+  text-align: center;
   padding: 1em;
-  width: 9em;
   background-color: #FFF;
   box-shadow: 0px 1px 6px rgba(0,0,0,.25)
 }
 
 .contact-info h2 {
-  margin-top: 0px;
+  margin: 0px;
+}
+
+hr {
+  height: 1px;
+  border-style: none;
+  background-color: #BBB;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
