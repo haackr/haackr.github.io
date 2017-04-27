@@ -8,7 +8,6 @@ body {
 
 p {
   color: #666;
-  display: block;
 }
 
 h2 {
@@ -24,16 +23,6 @@ a {
   :visited {
     text-decoration: none;
   }
-}
-
-hr {
-  height: 1px;
-  border-style: none;
-  background-color: #BBB;
-  margin-left: -1em;
-  margin-right: -1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 .header {
@@ -66,14 +55,16 @@ hr {
   top: 8em;
   p {
     position: relative;
-    left: 3rem;
-    top: -1.2rem;
+    left: 20%;
+    top: -1.3em;
     display: inline;
   }
 }
 
 .profile-pic {
-  width: 100%;
+  width: 85px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
   border: 3px solid #446;
 }
@@ -91,34 +82,16 @@ hr {
   }
 }
 
+.text-center {
+  text-align: center;
+}
 
 .contact-info {
-  display: inline-block;
-  float: right;
-  margin-right: 2%;
-  margin-left: 1em;
   text-align: center;
   padding: 1em;
   background-color: #FFF;
   box-shadow: 0px 1px 6px rgba(0,0,0,.25);
-  margin-top: 1em;
   h2 {
     margin: 0px;
-  }
-}
-
-/* Center heading for smaller screens */
-@media (max-width: 500px) {
-  .header-content {
-    position: relative;
-    text-align: center;
-    left: 0em;
-  }
-}
-/* move subheading down when it will overflow */
-@media (max-width: 254px) {
-  .header-content p {
-    left: 0;
-    top: 0;
   }
 }
