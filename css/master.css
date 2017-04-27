@@ -66,22 +66,11 @@ h2 {
 }
 
 .content p {
-  width: 50%;
+  max-width: 600px;
   display: block;
 }
-
 .social-media {
   font-size: 2em;
-}
-.svg-icon {
-  display: inline-block;
-  height: 1em;
-  vertical-align: bottom;
-  margin-bottom: .1em;
-}
-.strava-icon:hover {
-  content: url('icon-strava-hover.svg')
-  }
 }
 .social-media a {
   color: #446;
@@ -109,10 +98,13 @@ a:visted {
 .contact-info {
   display: inline-block;
   float: right;
+  margin-right: 2%;
+  margin-left: 1em;
   text-align: center;
   padding: 1em;
   background-color: #FFF;
-  box-shadow: 0px 1px 6px rgba(0,0,0,.25)
+  box-shadow: 0px 1px 6px rgba(0,0,0,.25);
+  margin-top: 1em;
 }
 
 .contact-info h2 {
@@ -136,4 +128,15 @@ hr {
   float: left;
   margin-left: -115px;
   border: solid 3px #446;
+}
+@media (max-width: 650px) {
+  .content {
+    margin: 0 2% 0 2%;
+  }
+  .profile-pic {
+    margin-left: 3px;
+    margin-top: 1em;
+    display: block;
+    float: none;
+  }
 }
