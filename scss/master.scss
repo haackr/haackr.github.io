@@ -1,8 +1,8 @@
 @import '../node_modules/foundation-sites/scss/foundation';
-@include foundation-everything;
+@import 'settings';
+@include foundation-everything(true);
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #EEEEF3;
 }
 
@@ -13,6 +13,27 @@ p {
 
 h2 {
   font-weight: 300;
+}
+
+a {
+  color: #446;
+  text-decoration: none;
+  :hover{
+    color: #002;
+  }
+  :visited {
+    text-decoration: none;
+  }
+}
+
+hr {
+  height: 1px;
+  border-style: none;
+  background-color: #BBB;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .header {
@@ -26,26 +47,64 @@ h2 {
   text-align: left;
   color: #88A;
   font-weight: 300;
-}
-.header h1 {
-  margin: 0px;
-  font-weight: 300;
-}
-.header p {
-  margin: 0px;
-  color: #88A;
+  margin-bottom: 1em;
+
+  h1 {
+    margin: 0px;
+    font-weight: 300;
+  }
+
+  p {
+    margin: 0px;
+    color: #88A;
+  }
 }
 
 .header-content {
   position: absolute;
   left: 10em;
   top: 8em;
+  p {
+    position: relative;
+    left: 3rem;
+    top: -1.2rem;
+    display: inline;
+  }
 }
-.header-content p {
-  position: relative;
-  left: 2em;
-  top: -.5em;
-  display: inline;
+
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #446;
+}
+
+.social-media {
+  font-size: 2em;
+  a {
+    color: #446;
+  }
+  a:hover {
+    color: #002;
+  }
+  a:visited {
+    text-deocration: none;
+  }
+}
+
+
+.contact-info {
+  display: inline-block;
+  float: right;
+  margin-right: 2%;
+  margin-left: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: #FFF;
+  box-shadow: 0px 1px 6px rgba(0,0,0,.25);
+  margin-top: 1em;
+  h2 {
+    margin: 0px;
+  }
 }
 
 /* Center heading for smaller screens */
@@ -61,85 +120,5 @@ h2 {
   .header-content p {
     left: 0;
     top: 0;
-  }
-}
-.content {
-  margin: 0 20% 0 20%;
-  height: 50vh;
-}
-
-.content p {
-  max-width: 600px;
-  display: block;
-}
-.social-media {
-  font-size: 2em;
-}
-.social-media a {
-  color: #446;
-}
-.social-media a :hover {
-  color: #002;
-}
-.social-media a :visited {
-  text-deocration: none;
-}
-
-a {
-  color: #446;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #002;
-}
-
-a:visted {
-  text-decoration: none;
-}
-
-.contact-info {
-  display: inline-block;
-  float: right;
-  margin-right: 2%;
-  margin-left: 1em;
-  text-align: center;
-  padding: 1em;
-  background-color: #FFF;
-  box-shadow: 0px 1px 6px rgba(0,0,0,.25);
-  margin-top: 1em;
-}
-
-.contact-info h2 {
-  margin: 0px;
-}
-
-hr {
-  height: 1px;
-  border-style: none;
-  background-color: #BBB;
-  margin-left: -1em;
-  margin-right: -1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.profile-pic {
-  display: inline-block;
-  width: 100px;
-  border-radius: 50%;
-  float: left;
-  margin-left: -115px;
-  border: solid 3px #446;
-}
-@media (max-width: 650px) {
-  .content {
-    margin: 0 2% 0 2%;
-  }
-  .profile-pic {
-    margin-left: 3px;
-    margin-top: 1em;
-    display: block;
-    float: none;
   }
 }
