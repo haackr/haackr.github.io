@@ -5,6 +5,7 @@ body {
 
 p {
   color: #666;
+  display: block;
 }
 
 h2 {
@@ -64,7 +65,8 @@ h2 {
 }
 
 .content p {
-  width: 400px;
+  width: 50%;
+  display: block;
 }
 
 .social-media {
