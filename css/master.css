@@ -79,6 +79,10 @@ h2 {
   vertical-align: bottom;
   margin-bottom: .1em;
 }
+.strava-icon:hover {
+  content: url('icon-strava-hover.svg')
+  }
+}
 .social-media a {
   color: #446;
 }
