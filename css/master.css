@@ -73,6 +73,12 @@ h2 {
 .social-media {
   font-size: 2em;
 }
+.svg-icon {
+  display: inline-block;
+  height: 1em;
+  vertical-align: bottom;
+  margin-bottom: .1em;
+}
 .social-media a {
   color: #446;
 }
